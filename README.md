@@ -1,1 +1,1 @@
-# metathings-component-digit-screen
+# metathings-sensor-led-display
