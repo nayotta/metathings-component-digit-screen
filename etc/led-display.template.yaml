@@ -1,0 +1,25 @@
+debug:
+  name: led-display  # module name
+  service:
+    scheme: mtp
+    host: 0.0.0.0
+    port: 5554
+  verbose: true
+  log:
+    level: debug
+  heartbeat:
+    interval: 15
+  credential:
+    domain: default
+    id: <credential-id>
+    secret: <credential-secret>
+  service_endpoint:
+    device:
+      address: <device-address>
+    default:
+      address: <metathings-address>
+  sensor:
+    flow_name: led_display
+    upload_period: 30
+    parser_fixed: 1
+    data_source: "http://127.0.0.1:8080/result"
