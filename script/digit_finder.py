@@ -156,9 +156,9 @@ def find_contours(
 
 def load_lenet16(symbol, params):
     return gluon.SymbolBlock.imports(
-        CONFIG['lenet16_model_symbol_path'],
+        symbol,
         ['data'],
-        CONFIG['lenet16_model_params_path'])
+        params)
 
 
 def format_image_for_recognization(
